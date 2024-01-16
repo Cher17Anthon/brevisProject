@@ -43,6 +43,11 @@
 								</a>
 							</div>
 						</div>
+						<div class="burger">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -78,9 +83,9 @@
 					<p class="title-company-main-block">О компании</p>
 					<div class="company-main-block-parts">
 						<div class="company-main-block-parts-left">
-							<p class="company-main-block-text-left">Компания ООО «УютДом» работает на рынке ремонта многоквартирных домов с 2005 года. С момента своего основания организация занималась ремонтно-строительными работами и специализировалась на ремонте инженерных коммуникаций и конструктивных элементов в жилых домах. Это и водопровод, канализация, отопление, кровля – всё то, что обеспечивает жильцам комфортное проживание.</p>
-							<p class="company-main-block-text-left">Наша деятельность отвечает всем требованиям действующего законодательства. ООО «УютДом» располагает штатом профессиональных специалистов для того, чтобы решить такую сложную задачу, как управление многоквартирного дома на самом высоком уровне.</p>
-							<p class="company-main-block-text-left"> Техническое обслуживание зданий предполагает постоянный мониторинг состояния всех инженерных коммуникаций объекта (тепло-, водо- и электроснабжение, канализация и др.), ведение переговоров с поставщиками и подрядчиками, а также выполнение необходимых уборочных работ <a href="" class="company-main-block-text-left-information">Подробнее</a> </p>
+							<p class="company-main-block-text-left">Компания ООО «УютДом» работает на рынке ремонта многоквартирных домов с 2005 года. С момента своего основания организация занималась ремонтно-строительными работами и специализировалась на ремонте инженерных коммуникаций и конструктивных элементов в жилых домах. Это и водопровод, канализация, отопление, кровля – всё то, что обеспечивает жильцам комфортное проживание. <a href="" class="company-main-block-text-left-information mobile-yellow-style">Подробнее</a></p>
+							<p class="company-main-block-text-left display-style-mobile">Наша деятельность отвечает всем требованиям действующего законодательства. ООО «УютДом» располагает штатом профессиональных специалистов для того, чтобы решить такую сложную задачу, как управление многоквартирного дома на самом высоком уровне.</p>
+							<p class="company-main-block-text-left display-style-mobile"> Техническое обслуживание зданий предполагает постоянный мониторинг состояния всех инженерных коммуникаций объекта (тепло-, водо- и электроснабжение, канализация и др.), ведение переговоров с поставщиками и подрядчиками, а также выполнение необходимых уборочных работ <a href="" class="company-main-block-text-left-information">Подробнее</a></p>
 							<a href="" class="company-main-block-text-link-telegram">
 								<img src="./images/telegramAbout.svg" alt="" class="company-main-block-absolute" />
 								<p class="company-main-block-link-telegram-text">Мы в Telegram</p>
@@ -118,12 +123,12 @@
 							<p class="service-part-block-text">Замена <br>батарей</p>
 							<a href="" class="services-delivery">Заказать</a>
 						</div>
-						<div class="service-part-block-inform">
+						<div class="service-part-block-inform margin-top-style-mobile-service">
 							<img src="./images/service-part-block-image-three.svg" alt="" class="service-part-block-image">
 							<p class="service-part-block-text">Замена <br>полотенцесушителя</p>
 							<a href="" class="services-delivery">Заказать</a>
 						</div>
-						<div class="service-part-block-inform">
+						<div class="service-part-block-inform margin-top-style-mobile-service">
 							<img src="./images/service-part-block-image-four.svg" alt="" class="service-part-block-image">
 							<p class="service-part-block-text">Замена счетчиков <br>водоснабжения</p>
 							<a href="" class="services-delivery">Заказать</a>
@@ -179,7 +184,9 @@
 								</select>
 							</div>
 							<div class="call__form__field call__form__field-apart">
-								<input type="text" class="call__form__input field-required" placeholder="Номер квартиры/помещения *" >
+								<select type="text" class="call__form__input field-required">
+									<option value="0">Номер квартиры/помещения *</option>
+								</select>
 							</div>
 						</div>
 						<div class="call__form__row2">
@@ -202,10 +209,12 @@
                         </label>
 
 						<div class="checkbox">
-							<a href="" class="custom-checkbox"><img src="images/Frame.svg" alt=""></a>
-							<p class="pers">Отправляя заявку, вы соглашаетесь на обработку ваших персональных данных</p>
+							<div class="">
+								<a href="" class="custom-checkbox"><img src="images/Frame.svg" alt=""></a>
+								<p class="pers">Отправляя заявку, вы соглашаетесь на обработку ваших персональных данных</p>
+							</div>
+							<button class="modal__button-call__btn" type="submit">Отправить</button>
 						</div>
-						<button class="modal__button-call__btn" type="submit">Отправить</button>
 					</form>
 				</div>
 			</div>
@@ -219,23 +228,26 @@
 					</div>
 					<p class="footer-adress">ООО "УютДом"<br>Адрес: 300041, г. Тула,<br>ул. Тургеневская, д. 47а, офис 315 </p>
 					<div class="footer_phones">
-						<div class="footer_phones-item">
-							<p class="footer_phones_item_title">Секретарь:</p>
-							<a class="footer_phones_item_phone" href="tel:84872702029">+7 (4872) 70-20-29</a>
+						<div class="email-block-style-mobile">
+							<div class="footer_phones-item mobile-style-right-footer">
+								<p class="footer_phones_item_title">Секретарь:</p>
+								<a class="footer_phones_item_phone" href="tel:84872702029">+7 (4872) 70-20-29</a>
+							</div>
+							<div class="footer_phones-item mobile-style-right-footer">
+								<p class="footer_phones_item_title top-margin-style-footer">Диспетчерская:</p>
+								<a class="footer_phones_item_phone" href="tel:84872520007">+7 (4872) 52-00-07</a>
+								<a href="" class="footer_phones_item_whatsapp">
+									<img src="./images/footer_phones_item_whatsapp.svg" alt="">
+									<p class="footer_phones_item_whatsapp-text">WhatsApp</p>
+								</a>
+							</div>
+							<div class="footer_phones-item mobile-style-right-footer">
+								<p class="footer_phones_item_title top-margin-style-footer">Абонентский отдел::</p>
+								<a class="footer_phones_item_phone" href="tel:84872525332">+7 (4872) 52-53-32, 52-53-44</a>
+							</div>
 						</div>
-						<div class="footer_phones-item">
-							<p class="footer_phones_item_title">Диспетчерская:</p>
-							<a class="footer_phones_item_phone" href="tel:84872520007">+7 (4872) 52-00-07</a>
-							<a href="" class="footer_phones_item_whatsapp">
-								<img src="./images/footer_phones_item_whatsapp.svg" alt="">
-								<p class="footer_phones_item_whatsapp-text">WhatsApp</p>
-							</a>
-						</div>
-						<div class="footer_phones-item">
-							<p class="footer_phones_item_title">Абонентский отдел::</p>
-							<a class="footer_phones_item_phone" href="tel:84872525332">+7 (4872) 52-53-32, 52-53-44</a>
-						</div>
-						<div class="footer_phones-item">
+						
+						<div class="footer_phones-item email-block-style-mobile">
 							<p class="footer_phones_item_title">Наша почта:</p>
 							<a class="footer_phones_item_email" href="mailo:yutdom_11@mail.ru">
 								<img src="./images/mail-footer.svg" alt="">
