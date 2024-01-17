@@ -71,6 +71,30 @@
 								<a href="" class="selected-header-menu">Контакты</a>
 							</li>
 							<a href="" class="header_menu_btn">СТАТЬ КЛИЕНТОМ УК УЮТДОМ</a>
+							<div class="header-content-block mobile-block-header-content">
+								<div class="header-content-phone">
+									<div class="header-content-phone-part">
+										<p class="header-content-phone-part_title">Диспетчерская:</p>
+										<a href="tel:84872520007" class="header-content-phone-part_link">
+											<img src="./images/tube_header.svg" alt="" class="absolute_header-content-phone-part_link">
+											<p class="header-content-phone-part_link-text">+7 (4872) 52-00-07</p>
+										</a>
+									</div>
+									<div class="header-content-phone-part">
+										<p class="header-content-phone-part_title">Секретарь::</p>
+										<a href="tel:84872714141" class="header-content-phone-part_link">
+											<img src="./images/tube_header.svg" alt="" class="absolute_header-content-phone-part_link">
+											<p class="header-content-phone-part_link-text">+7 (4872) 70-41-41</p>
+										</a>
+									</div>
+								</div>
+								<div class="header-content-social">
+									<a href="" class="header-content-social-link">
+										<img src="./images/WhatsApp.svg" alt="" />
+										<p class="header-content-social-link-whatsapp">WhatsApp</p>
+									</a>
+								</div>
+							</div>
 						</ul>
 					</div>
 				</div>
@@ -273,6 +297,14 @@
 		<script src="script.js"></script>
 		<script>
 			let slider = new Slider("#my_slider");
+
+			const burger = document.querySelector('.burger');
+			const headerMenu = document.querySelector('.header_menu');
+
+			burger.addEventListener('click', function() {
+				this.classList.toggle('active');
+				headerMenu.classList.toggle('active');
+			});
 		</script>
 	</body>
 </html>
