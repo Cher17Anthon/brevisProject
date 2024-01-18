@@ -1313,6 +1313,10 @@ li {
   .header-content-phone-part_title {
     color: #FFF;
   }
+
+  .header_menu_li:not(:first-child) {
+    border-left: none;
+  }
   
 }
 
@@ -1592,6 +1596,10 @@ li {
 
   .header-content-phone-part:last-child {
     padding-left: 0;
+  }
+
+  .header_menu_li:not(:first-child) {
+    border-left: none;
   }
 
 }
